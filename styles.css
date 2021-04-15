@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    line-height: 1.5em;
+    background-image: url("/images/darkened.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: blue;
+    font-size: 1.1em;
+}
+a:active{
+    text-decoration: underline;
+}
+ul{
+    list-style-type: none;
+}
+input[type="button"]{
+    background: none;
+    border: 2px solid blue;
+    border-radius: 5px;
+    color: blue;
+    padding: 5px;
+    cursor: pointer;
+}
+/* Header styling */
+header{
+    position: sticky;
+    top: 0;
+    max-width: 100%vw;
+}
+.logo-line{
+    background-color: blue;
+    z-index: 2;
+}
+.under_logo_line{
+    background-color: black;
+    z-index: 2;
+}
+.logo-line h5{
+    padding: 5px;
+    margin-left: 100px;
+}
+.under_logo_line{
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    border-bottom: 1px solid gray;
+}
+.address{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+.address img{
+    margin-left: 55%;
+}
+.rightnavicons{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+   
+}
+.rightnavicons div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    padding-top: 0;
+}
+.rightnavicons h3{
+    align-self: center;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+/* Nav styles */
+nav{
+    display: grid;
+    grid-template-columns: 0.8fr 1.4fr 1fr;
+    overflow: auto;
+}
+nav ul{
+    padding-left: 50%;
+    border-right: 1px solid gray;
+    padding-top: 5%;
+}
+nav li{
+    padding: 10px;
+}
+/* nav li a:hover{
+    color: blue;
+} */
+.itemlist{
+    border-right: 1px solid gray;
+}
+.itemlist h5{
+    font-size: 1.1em;
+}
+.itemlist span{
+    font-size: 0.9em;
+}
+.heading{
+    padding-left: 15px;
+    padding-top: 5px;
+}
+.heading span{
+    background: blue;
+    color: white;
+    padding: 2px;
+    margin-left: 2px;
+    font-size: 1em;
+}
+.nosemasks, .D750, .storagecabinet, .wristwatch{
+    display: grid;
+    grid-template-columns: 100px 2fr 1fr;
+    padding: 15px;
+}
+.nosemaskinfo, .D750info, .storagecabinetinfo, .wristwatchinfo{
+    padding-left: 10px;
+}
+.addbutton{
+    margin-top: 57%;
+    margin-left: 70%;
+    text-align: center;
+    padding: 0;
+    font-size: 1.5em;
+    display: inline;
+}
+/* Trademarks style */
+.trademarks{
+    background: blue;
+    display: grid;
+    grid-template-columns: 0.8fr 1.4fr 1fr;
+}
+.trademarks-specific{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.trademarks-specific span{
+   display: block;
+}
+.customer{
+    justify-self: right;
+}
+.delivery, .customer{
+    position: relative;
+}
+.delivery img{
+margin-left: 10%;
+}
+.customer img{
+    margin-left: 30%;
+}
+footer{
+    text-align: center;
+}
